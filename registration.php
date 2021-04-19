@@ -8,14 +8,16 @@
  *                     It is also available through the world-wide-web at this URL:
  *                     https://www.mageplaza.com/LICENSE.txt
  *
- *                     @category  Mageplaza
- *                     @package   Mageplaza_Russian
- *                     @copyright Copyright (c) 2020
- *                     @license   https://www.mageplaza.com/LICENSE.txt
+ * @category  Mageplaza
+ * @package   Mageplaza_Russian
+ * @copyright Copyright (c) 2020
+ * @license   https://www.mageplaza.com/LICENSE.txt
  */
 
-\Magento\Framework\Component\ComponentRegistrar::register(
-    \Magento\Framework\Component\ComponentRegistrar::LANGUAGE,
+use Magento\Framework\Component\ComponentRegistrar;
+
+ComponentRegistrar::register(
+    ComponentRegistrar::LANGUAGE,
     'mageplaza_ru_ru',
     __DIR__
 );
